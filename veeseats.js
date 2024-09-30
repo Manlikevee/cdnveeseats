@@ -370,7 +370,7 @@ function convertMarkdownToPlainText(markdown) {
     const gridCard = document.createElement('div');
     gridCard.classList.add(`${randomPrefix}rolegrid`);
     if(publickey){
-        const datafetched = await fetchJobs(jobs,publickey); 
+        const datafetched = await fetchJobs(publickey); 
         gridCard.innerHTML = datafetched;
     }
 else{
